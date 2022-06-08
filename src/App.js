@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Buttom from './buttom'
+  
+// Contains the value and text for the options
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    // It is a hook imported from 'react-i18next'
+    const { t } = useTranslation(); 
+    return (
+        <div className="App">
+          <Buttom />
+   <h2>{t('wlc_to_react')}</h2>
+        </div>
+    );
 }
-
+  
 export default App;
