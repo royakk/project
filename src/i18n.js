@@ -27,7 +27,7 @@ i18n
          order: ['htmlTag', 'cookie', 'localStorage',  'path', 'subdomain']},
     cache :['cookie'],
     backend: {
-        loadPath: '/locale/fa.json',
+        loadPath: '/locale/{{lng}}.json',
     },
     react :{useSuspense :false}
   });
